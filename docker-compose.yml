@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: simple-web-app
+    ports:
+      - "8080:80"
+    volumes:
+      # Привязываем том для разработки (изменения сразу видны)
+      - ./index.html:/usr/share/nginx/html/index.html
+    restart: unless-stopped

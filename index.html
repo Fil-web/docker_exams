@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моё первое Docker-приложение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+        h1 { font-size: 48px; margin-bottom: 20px; }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .docker-info {
+            background: #0db7ed;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 Docker работает!</h1>
+        <div class="docker-info">
+            <h2>Контейнер запущен успешно</h2>
+            <p>Это самое простое приложение на Docker</p>
+        </div>
+        <p>Этот контейнер собран из Dockerfile и содержит:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>✓ Nginx на Alpine Linux</li>
+            <li>✓ Кастомная HTML-страница</li>
+            <li>✓ Всё вместе весит ~23MB</li>
+        </ul>
+        <p style="margin-top: 30px; font-size: 14px;">
+            ID контейнера: <strong><?php echo gethostname(); ?></strong>
+        </p>
+    </div>
+</body>
+</html>
