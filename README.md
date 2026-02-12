@@ -9,13 +9,7 @@
     git clone https://github.com/Fil-web/docker_exams.git
     cd docker
     ```
-2.  Создайте и активируйте виртуальное окружение:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    ```
 
-
-3. Чтобы начать использовать программу, в открытой папке проекта запустите
+2. Чтобы начать использовать программу, в открытой папке проекта запустите
 
 ./start.sh
